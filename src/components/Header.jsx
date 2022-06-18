@@ -152,7 +152,7 @@ console.log("userDetailuserDetail",userDetail)
     <div className='header'>
     <Navbar expand="lg" className='cus_navbar' variant="dark">
       <Container>
-        <Link to='/'><img src={logo} alt="logo" className="logo" /></Link>
+        <Link to='/'><img src={logo} alt="logo" className="logo" style={{filter: "invert(1)"}} /></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <div class="header_right w-40">

@@ -12,7 +12,7 @@ html{
     min-height: 100%; */
     
 }
-
+bg-images
 body {
     margin: 0px;
     padding: 0px;
@@ -66,7 +66,7 @@ section {
 }
 
 input.search-input::placeholder {
-    color: white;
+    color: #b5b5b5;
     opacity: 1;
 }
 
@@ -114,8 +114,8 @@ input.search-input::placeholder {
 .cus_navbar {
     padding: 0.3rem 1rem;
     /* background: #14141f !important; */
-    background-color: #170c2a !important;
-    box-shadow: 0px 0px 8px #5142fc82;
+    background-color: #fff !important;
+    box-shadow: 0px 0px 8px #c7c7cc82;
 }
 
 .cus_navbar .logo {
@@ -123,8 +123,9 @@ input.search-input::placeholder {
 }
 
 .cus_navbar .btn-outline-secondary {
-    border: 1px solid #5142FC;
-    color: #fff;
+    border: 1px solid #dbdbdb;
+    /* color: #fff; */
+    color: #0e0e0e;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -135,13 +136,13 @@ input.search-input::placeholder {
 }
 
 .cus_navbar .btn-outline-secondary:hover {
-    background-color: #14141f;
+    background-color: #fff;
 }
 
 .form-sec svg {
     position: absolute;
     margin: 11px;
-    color: #fff;
+    color: #b5b5b5;
 }
 .resell_modal .form-control:focus{
     box-shadow: none;
@@ -150,8 +151,8 @@ input.search-input::placeholder {
 
 .form-sec .form-control {
     background-color: transparent;
-    border: 1px solid #5142FC;
-    border-radius: 25px;
+    border: 2px solid #dbdbdb;
+    border-radius: 13px;
     padding-left: 2rem;
     color: #fff;
 }
@@ -173,13 +174,15 @@ input.search-input::placeholder {
     background: #14141f;
     background-color: #111137;
      background-color: #2A2272; */
-    padding: 150px 0px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #170c2a;
-    /* background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://static.live.templately.com/woocommerce/2021/07/slider-image.jpg); */
+    /* background-color: #170c2a; */
+    background-image:url("../img/30979\ [Converted]-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     /* background-image: url("../img/hero.png");
     background-position: center right;
     background-repeat: no-repeat;
@@ -189,12 +192,13 @@ input.search-input::placeholder {
 }
 
 .bg-images img {
-    transform: translateY(0px);
+    /* transform: translateY(0px);
     animation-name: floating_img;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-delay: 2s;
+    animation-delay: 2s; */
+border-radius: 10px;
    
 }
 @keyframes floating_img {
@@ -211,13 +215,15 @@ input.search-input::placeholder {
     line-height: 1.4;
     font-size: 3.5rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #000;
     /* text-shadow: 0 0 7px #000000; */
 }
 
 .hero-title span {
-    color: #14141f;
-    background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4b50e6);
+    /* color: #14141f;
+    background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4b50e6); */
+    color: #ffffff;
+    background: linear-gradient(-45deg, #4a9fff, #4be695, #ff9515, #0eb3ff);
     background-size: 100% 100%;
     -webkit-background-clip: text;
     -webkit-text-stroke: 6px transparent;
@@ -225,7 +231,7 @@ input.search-input::placeholder {
 }
 
 .hero-subtitle {
-    color: #fff;
+    color: #000;
     margin-top: 1rem;
     font-size: 1.2rem;
     /* text-shadow: 0 1px 1px rgb(0 0 0 / 10%); */
@@ -255,16 +261,17 @@ input.search-input::placeholder {
 
 .explore_marketplace_txt {
     background: #4B50E6;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border: 1px solid #4B50E6;
     color: #fff;
     text-decoration: none;
+    border-radius: 12px;
 }
 
 .explore_marketplace_txt:hover {
     text-decoration: none;
     text-shadow: 0px 0px 20px black;
-    background: #14141f;
+    background: #4B50E6;
     border: 1px solid #4B50E6;
     box-shadow: none !important;
     color: #fff;
@@ -373,7 +380,7 @@ input.search-input::placeholder {
 footer {
     padding: 30px;
     /* background-color: #14141f; */
-    background-color: #170c2a;
+    background-color: #efefef;
     /* position: absolute;
     bottom: 0; */
     width: 100%;
@@ -384,7 +391,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -394,14 +401,14 @@ footer ul li a:hover {
 }
 
 footer .btn {
-    background: #9d91ff;
-    border: 1px solid #9d91ff;
+    background: #4b50e6;
+    border: 1px solid #4b50e6;
     color: #fff;
 }
 
 footer .btn:hover {
-    background-color: #9d91ff;
-    border: 1px solid #9d91ff;
+    background-color: #4b50e6;
+    border: 1px solid #4b50e6;
 }
 footer .input-group .btn {
     position: relative;

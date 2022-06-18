@@ -378,7 +378,7 @@ function Prod_detail() {
 
                                         <div className='' style={{ display: "flex", gap: "6px" }}>
                                             <h6>Owned By</h6>
-                                            <Link to="/">{nftOwnerAddress.slice(0, 6)}.....{nftOwnerAddress.slice(-6, nftOwnerAddress.length)}</Link>
+                                            <Link to={`/User_profile?id=${nftInfo.user_id}`}>{nftOwnerAddress.slice(0, 6)}.....{nftOwnerAddress.slice(-6, nftOwnerAddress.length)}</Link>
                                         </div>
                                     </div>
                                     <div className='prod_nft_price_div'>

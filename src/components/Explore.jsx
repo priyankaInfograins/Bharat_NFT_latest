@@ -153,7 +153,7 @@ function Explore() {
                                                     userFullName={e.userFullName}
                                                     name={e.name}
                                                     username={e.username}
-                                                    id={e.nftId}
+                                                    id={e.id}
                                                     category={e.category}
                                                     userProfile={e.userProfile}
                                                     auction_left_date={e.auction_left_date}

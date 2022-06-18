@@ -57,46 +57,49 @@ function AllUsers() {
             </Col>
           </Row>
           <Row>
-            {(topUsers.length === 0) ?
-              <Row className='mt-4'>
-                <Col lg={12} md={12}>
-                  <div className='filter_data_card text-center py-5'>
-                    <p>No NFT's Available</p>
-                  </div>
-                </Col>
-              </Row>
-
-
-              :
-              currentItemsUsers.map((e, index) => {
-
-                var link = `/User_profile?id=${e.id}`
-                var name = e.userFullName
-                var image = e.image
-                var username = e.username
-
-                return (
-                  <Col lg={3} md={6}>
-
-                    <Card className='mt-4'>
-                      <Link to={link}>
-                        <div className="nft_img_div">
-                          <Card.Img src={image} />
-                        </div>
-
-                        <div>
-                          <Card.Body>
-                            <div className='user-section d-flex justify-content-between'>
-                              <div>{username}</div>
-                              <h5>{name}</h5>
-                            </div>
-                          </Card.Body>
-                        </div>
-                      </Link>
-                    </Card>
+            {
+              (topUsers.length === 0) ?
+                <Row className='mt-4'>
+                  <Col lg={12} md={12}>
+                    <div className='filter_data_card text-center py-5'>
+                      <p>No NFT's Available</p>
+                    </div>
                   </Col>
-                )
-              })
+                </Row>
+
+
+                :
+                currentItemsUsers ?
+                currentItemsUsers.map((e, index) => {
+
+                  var link = `/User_profile?id=${e.id}`
+                  var name = e.userFullName
+                  var image = e.image
+                  var username = e.username
+
+                  return (
+                    <Col lg={3} md={6}>
+
+                      <Card className='mt-4'>
+                        <Link to={link}>
+                          <div className="nft_img_div">
+                            <Card.Img src={image} />
+                          </div>
+
+                          <div>
+                            <Card.Body>
+                              <div className='user-section d-flex justify-content-between'>
+                                <div>{username}</div>
+                                <h5>{name}</h5>
+                              </div>
+                            </Card.Body>
+                          </div>
+                        </Link>
+                      </Card>
+                    </Col>
+                  )
+                })
+                : " "
             }
           </Row>
           <Row>

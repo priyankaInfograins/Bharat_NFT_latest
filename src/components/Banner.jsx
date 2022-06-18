@@ -1,10 +1,12 @@
 import React from 'react'
 import {Container,Row, Col,Button} from 'react-bootstrap'
-import featured from '../assets/img/nerw-01.jpg'
+import featured from '../assets/img/cat-01.jpg'
 import { Link } from 'react-router-dom'
+import bottom_img from '../assets/img/bottom_img.png'
 
 function Banner() {
   return (
+    <>
     <div className='bg-images'>
         <Container>
             <Row>
@@ -21,6 +23,8 @@ function Banner() {
             </Row>
         </Container>
     </div>
+  
+    </>
   )
 }
 

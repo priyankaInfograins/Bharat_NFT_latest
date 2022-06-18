@@ -9,7 +9,7 @@ function Footer() {
         <Container>
             <Row>
                 <Col sm={4}>
-                    <Link to='/'><img src={logo} alt="logo" className="logo img-fluid w-75" /></Link>
+                    <Link to='/'><img src={logo} alt="logo" className="logo img-fluid w-75" style={{filter: "invert(1)"}} /></Link>
                     
                 </Col>
                 <Col sm={5}>
